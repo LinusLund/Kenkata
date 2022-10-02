@@ -191,7 +191,7 @@ html, body
     {
         flex: 2;
     }
-
+    /* search-bar.  */
      .min-menu #search-form input
     {
         height:3.2rem;
@@ -202,8 +202,8 @@ html, body
         border:1px solid var(--color-gray-2);
     }
 
-     .min-menu #search-form  button
-    {
+         .min-menu #search-form  button
+        {
         position:absolute;
         right:25.5rem;
         top:2.20rem;
@@ -217,14 +217,14 @@ html, body
         border-radius:45rem;
         border-top-left-radius:1rem; 
         border-bottom-left-radius:1rem;
-    }
+        }
 
-    .min-menu #search-form button:hover
-    {
+        .min-menu #search-form button:hover
+        {
         transition:0.2s ease-in-out;
         color:var(--color-theme);
         background-color: #0E153D;
-    }
+        }
 
     .min-menu #search-form .fa-search
     {
@@ -1336,6 +1336,11 @@ transition:0.2s ease-in-out;
     font-size: var(--font-size-16);
 
 }
+.subscribe .subscribe-left button:hover
+{
+    background-color: var(--color-theme-dark);
+    transition: 0.2s ease-in-out;
+}
 
 .subscribe .subscribe-graybox
 {
@@ -1348,6 +1353,7 @@ transition:0.2s ease-in-out;
     bottom:0;
     
 }
+
 /* Footer */
 .footer-copyright
 {
@@ -1365,29 +1371,115 @@ transition:0.2s ease-in-out;
 }
 
 
+
 /* Sign up & Sign in */
 
 .signup-signin
 {
-    padding:3rem;
+    padding-top:2rem;
+    
 }
 
-.signup-signin .container
+#signin-form
+{
+    height:65%;
+}
 
+.signup-signin .container .reg-body
+{
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    gap:2rem;
+    
+}
+.signup-signin .container .reg-body .register
+{
+   position: relative;
+   background-color: var(--color-gray-3);
+   padding:3.5rem;
+}
 
+.signup-signin .container #signin_email
+{
+    height:1.5rem;
+    width:30rem;
+    border-radius:0.25rem;
+    padding:1rem;
+    overflow:hidden;
+    border:1px solid var(--color-gray-2);
+}
 
+.signup-signin .container #signin_password
+{
+    height:1.5rem;
+    width:30rem;
+    border-radius:0.25rem;
+    padding:1rem;
+    overflow:hidden;
+    border:1px solid var(--color-gray-2);
 
-        .signup-signin .card .card-body .card-text
-        {
-            margin:1.5rem 0;
-            line-height:2;
-        }
-        .signup-signin .card .card-body .card-text .text-small
-         {
-            color:var(--color-gray-5);
-            font-size:0.875rem;
-         }
+}
 
+.signup-signin .container .btn-theme  
+{
+    width:30rem;
+    height:3.5rem;
+    font-size: var(--font-size-14);
+}
+
+.reg-body #signupForm
+{
+    padding:1rem;
+}
+
+#signup_firstName
+{
+    height:1.5rem;
+    width:30rem;
+    border-radius:0.25rem;
+    padding:1rem;
+    overflow:hidden;
+    border:1px solid var(--color-gray-2);
+}
+#signup_lastName
+{
+    height:1.5rem;
+    width:30rem;
+    border-radius:0.25rem;
+    padding:1rem;
+    overflow:hidden;
+    border:1px solid var(--color-gray-2);
+}
+.reg-body .register #signup_email
+{
+    height:1.5rem;
+    width:30rem;
+    border-radius:0.25rem;
+    padding:1rem;
+    overflow:hidden;
+    border:1px solid var(--color-gray-2);
+}
+#signup_password
+{
+    height:1.5rem;
+    width:30rem;
+    border-radius:0.25rem;
+    padding:1rem;
+    overflow:hidden;
+    border:1px solid var(--color-gray-2);
+}
+
+.register .reg-text
+{
+    color: var(--color-gray-1);
+    font-size: var(--font-size-14);
+}
+
+.required
+{
+    color:var(--color-theme);
+}
          
 /*              Responsivitet
 Nuke it from orbit, its the only way to be sure */

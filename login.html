@@ -67,10 +67,11 @@
                 <a href="Index.html"><img src="Images/Logo.svg" alt= "Kenkata Webshop"></a>
             </div>
 
-            <div class="search">
-                <input type="text" placeholder="Fyfan för det här..">
+            <form id="search-form">
+                <input type="search" id="search" name="searchbar" placeholder="Search products..." >
                 <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
+            
+            </form>   
 
             <div class="menu-links">
                 <a class="menu-link" href="#"><i class="fa-light fa-user me-2"></i>My Account</a>
@@ -114,7 +115,7 @@
         <div class="reg-body">
             <div class="register">
                 <h1 class="reg-big">LOGIN</h1>
-                <form id="signinForm">
+                <form id="signin-form">
                     <div class="my-4">
                         <label for="signin_email">Email <span class="required">*</span></label>
                         <input id="signin_email" type="email" required>
@@ -124,12 +125,12 @@
                         <label for="signin_password">Password <span class="required">*</span></label>
                         <input id="signin_password" type="password" required>
                     </div>
-                    <p class="reg-text2">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy.</a></p>
+
                     <div class="mb-3 d-grid">
-                        <button type="submit" class="btn btn-theme">REGISTER</button>
+                        <button type="submit" class="btn btn-theme">LOGIN</button>
                     </div>
                 </form>
-                
+            </div>    
                 <div class="reg-body">
                     <div class="register">
                         <h1 class="reg-big">REGISTER</h1>
@@ -169,6 +170,9 @@
                     </div>
                 </div>
             </div>
-        </section>
 
+        </section>
+        <footer class="footer-copyright">
+            <p>© Copyright 2022 Kenkata Linus Lund</p>
+        </footer>
 </body>
